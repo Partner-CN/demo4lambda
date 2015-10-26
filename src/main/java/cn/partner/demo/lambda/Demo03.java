@@ -13,6 +13,13 @@ import lombok.extern.slf4j.Slf4j;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
+/**
+ * introduction of some class in package java.util.function. Consumer & Function & Precidate &
+ * Supplier
+ * 
+ * @author qiao.yongxin
+ * @date 2015年10月26日
+ */
 @Slf4j
 public class Demo03 {
     public static void main(String[] args) {

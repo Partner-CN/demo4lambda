@@ -8,6 +8,12 @@ import lombok.extern.slf4j.Slf4j;
 
 import com.google.common.collect.Lists;
 
+/**
+ * IntConsumer
+ * 
+ * @author qiao.yongxin
+ * @date 2015年10月26日
+ */
 @Slf4j
 public class Demo04 {
 

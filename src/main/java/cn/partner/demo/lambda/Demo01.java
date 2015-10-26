@@ -7,6 +7,12 @@ import lombok.extern.slf4j.Slf4j;
 
 import com.google.common.collect.Lists;
 
+/**
+ * introduction of lambda
+ * 
+ * @author qiao.yongxin
+ * @date 2015年10月26日
+ */
 @Slf4j
 public class Demo01 {
     public static void main(String[] args) {

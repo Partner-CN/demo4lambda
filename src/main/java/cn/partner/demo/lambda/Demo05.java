@@ -25,13 +25,14 @@ public class Demo05 {
         testMatch(list);
         testCollectMap(list);
         list.forEach(System.out::println);
-        
+
     }
 
     static void testFilter(List<Integer> list) {
         List<Integer> newList = list.stream().filter(Primes::isPrime)
                 .collect(Collectors.toList());
         log.info("filter: {}", newList);
+        testMatch(list);
     }
 
     static void testMatch(List<Integer> list) {

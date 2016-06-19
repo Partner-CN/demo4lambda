@@ -7,6 +7,8 @@ import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
+import java.util.function.UnaryOperator;
+import java.util.stream.Collectors;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -28,6 +30,7 @@ public class Demo03 {
         testFunction(list);
         testPrecidate(list);
         testSupplier();
+        testUnaryOperator(list);
     }
 
     static void testConsumer(List<Integer> list) {
@@ -53,5 +56,10 @@ public class Demo03 {
     static void testSupplier() {
         Supplier<Integer> supplier = () -> new Random().nextInt(100);
         log.info("random data : {}", supplier.get());
+    }
+
+    static void testUnaryOperator(List<Integer> list) {
+        Map<String, Integer> map = list.stream().collect(Collectors.toMap(String::valueOf, UnaryOperator.identity()));
+        log.info("convert list to map, {}", map);
     }
 }
